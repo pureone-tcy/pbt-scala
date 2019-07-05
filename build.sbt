@@ -8,5 +8,6 @@ ThisBuild / organizationName := "pureone"
 lazy val root = (project in file("."))
   .settings(
     name := "pbt-scala",
+    parallelExecution in Test := false,
     libraryDependencies ++= dependencies
   )
